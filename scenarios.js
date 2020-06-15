@@ -29,3 +29,20 @@ const verdict = declareMurderer();
 console.log(verdict);
 
 //   Output: Error => we can't reassign const variables.
+
+let murderer = 'Professor Plum';
+
+const declareMurderer = function() {
+  let murderer = 'Mrs. Peacock';
+  return `The murderer is ${murderer}.`;
+}
+
+const firstVerdict = declareMurderer();
+console.log('First Verdict: ', firstVerdict);
+
+//   Output: The murderer is Mrs. Peacock.
+
+const secondVerdict = `The murderer is ${murderer}.`;
+console.log('Second Verdict: ', secondVerdict);
+
+// Output: The murderer is Professor Plum.
