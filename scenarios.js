@@ -30,6 +30,7 @@ console.log(verdict);
 
 //   Output: Error => we can't reassign const variables.
 
+
 let murderer = 'Professor Plum';
 
 const declareMurderer = function() {
@@ -46,6 +47,7 @@ const secondVerdict = `The murderer is ${murderer}.`;
 console.log('Second Verdict: ', secondVerdict);
 
 // Output: The murderer is Professor Plum.
+
 
 let suspectOne = 'Miss Scarlet';
 let suspectTwo = 'Professor Plum';
@@ -64,3 +66,24 @@ console.log(suspects);
 console.log(`Suspect three is ${suspectThree}.`);
 
 // output: Suspect three is Mrs. Peacock.
+
+
+const scenario = {
+    murderer: 'Miss Scarlet',
+    room: 'Kitchen',
+    weapon: 'Candle Stick'
+  };
+  
+  const changeWeapon = function(newWeapon) {
+    scenario.weapon = newWeapon;
+  }
+  
+  const declareWeapon = function() {
+    return `The weapon is the ${scenario.weapon}.`;
+  }
+  
+  changeWeapon('Revolver');
+  const verdict = declareWeapon();
+  console.log(verdict);
+
+//   output: The weapon is the Revolver.
