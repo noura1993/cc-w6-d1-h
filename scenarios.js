@@ -178,3 +178,19 @@ const scenario = {
   console.log(verdict);
 
 //   output: The weapon is Candle Stick.
+
+
+let murderer = 'Professor Plum';
+
+if (murderer === 'Professor Plum') {
+  let murderer = 'Mrs. Peacock';
+}
+
+const declareMurderer = function() {
+  return `The murderer is ${murderer}.`;
+}
+
+const verdict = declareMurderer();
+console.log(verdict);
+
+// output: The murderer is Professor Plum.
