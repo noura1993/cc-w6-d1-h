@@ -214,4 +214,26 @@ console.log(verdict);
 
 ### Extensions
 
+### Episode 10
+
+```js
+let murderer = 'Mr. Black';
+{
+    let murderer = 'Mr. White';
+    {
+        murderer = 'Mr. Grey';
+        {
+            murderer = 'Mrs. Violet';
+        }
+        console.log(`I think the murderer is ${murderer}`);
+    }
+    console.log(`I think the murderer is ${murderer}`);
+    { 
+        let murderer = 'Mrs. Pink';
+    }
+    console.log(`I think the murderer is ${murderer}`);
+}
+console.log(`So sad! ... However, the murderer is ${murderer}`);
+```
+
 Make up your own episode!
